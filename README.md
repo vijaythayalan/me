@@ -1,9 +1,6 @@
 # me
 First repository.
 
-
-Hi Anna,
-
 Please go to the below link
 
 https://unifiedportal-mem.epfindia.gov.in/memberinterface/
