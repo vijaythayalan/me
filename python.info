@@ -4,3 +4,13 @@ string.index("CHAR") => CHAR index count
 string.count("CHAR") => CHAR count in the string
 string.find("CHARS") => Find the set of chars
 string.lower() => Get lower 
+string.strip() => like trim
+string.strip("CHAR") => Remove all CHAR
+string.replace(" ", "") => Replace a specific chars
+string.split(",") => split chars and return list
+
+"o" in string => returns boolean
+"o" not in string => returns boolean
+
+"string %s number %d and decimal %f" % ("string", 0, 12.4)
+"string %s number %d and decimal %.2f" % ("string", 0, 12.4)
