@@ -1,0 +1,6 @@
+IndexError: string index out of range
+
+string.index("CHAR") => CHAR index count
+string.count("CHAR") => CHAR count in the string
+string.find("CHARS") => Find the set of chars
+string.lower() => Get lower 
