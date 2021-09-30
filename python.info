@@ -1,3 +1,8 @@
+help(METHOD_NAME) in python command window you will get method description
+type(VARIABLE) will return its class Eg: <class 'int'>
+
+Strings
+
 IndexError: string index out of range
 
 string.index("CHAR") => CHAR index count
@@ -14,3 +19,127 @@ string.split(",") => split chars and return list
 
 "string %s number %d and decimal %f" % ("string", 0, 12.4)
 "string %s number %d and decimal %.2f" % ("string", 0, 12.4)
+
+"string {} number {} and decimal {}".format("string", 0, 12.4)
+"string {0} number {1} and decimal {2}".format("string", 0, 12.4)
+
+string[start:stop:step]
+
+Numbers
+type(4) => <class 'int'>
+type(4.8) => <class 'float'>
+int(1.9) => 1
+float(1) => 1.0
+abs(-5) => 5
+min(1,2) => 1
+max(1,2) => 2
+pow(3,2) =>9
+
+Booleans
+1 == 1 => True
+1 == 2 => False
+(1 == 1) and (2 == 2) => True
+(1 == 1) and (1 == 2) => False
+
+1 == 1 or 2 == 2 => True
+1 == 1 or 1 == 2 => True
+2 == 1 or 1 == 2 => False
+
+not(1 == 1) => False
+bool(1 == 1) => True
+bool(1 == 2) => False
+bool([]) => False
+bool([0]) => True
+
+List
+list1 = []
+type(list1) => <class 'list'>
+list1 = ["one", 10, 4.4]
+len(list1) => 3
+list[0] => "one"
+list[1] => 10
+
+list[1] = 11
+
+list1 => ["one", 11, 4.4]
+
+list2 = [1, 2, 3]
+min(list2) => 1
+max(list2) => 2
+
+list2 = ["a", "b", "c"]
+min(list2) => a
+max(list2) => c
+
+TypeError: '>' not supported between instances for 'int' and 'str'
+
+list1.append("value") => added last to the list
+list1.insert(2, "value") => added value to 2nd index of the list
+
+del list1[2] => Remove 2nd index value from the list
+list1.pop(0) => Remove 0nd index value from the list
+list1.remove(0) => Remove 0nd index value from the list
+
+list1.extend(list2) => Will include list2 values to list1
+
+list1.sort() => Ascending sort
+list1.reverse() => Descending sort
+
+sorted(list1) => Ascending sort
+sorted(list1, reverse = True) => Ascending sort
+
+
+Set
+list4 = [1, 2, 3, 3]
+set(list4) => Return unique list values
+
+1 in list4 => Return boolean value
+11 not in list4 => Return boolean value
+
+set1 = set([1, 2, 3, 4])
+
+set1.add(5); => 5 will add at the last
+set1.remove(1); => 1 will be removed
+
+set3 = {1, 2, 3, 5}
+set4 = {3, 5, 8}
+
+set3.intersection(set4) => {3}
+set3.difference(set4) => {1, 2, 4}
+set4.difference(set3) => {8, 5}
+
+set3.union(set4) => {1, 2, 3, 4, 5, 8}
+
+set3.pop() => Remove first element
+set3.clear() => Remove all elements
+
+Fronzenset
+
+list5 = [1,2]
+
+fsl = frozenset(list5) => We cannot add, remove, pop, clear for fronzensets
+
+Tuples
+
+tuple1 = (1, 2, 3, 4, 5)
+
+len(tuple1) => 5
+min(tuple1) => 1
+max(tuple1) => 5
+
+
+Dictionary
+
+dict1 = {"1": "one", "2": "two", "3": "three"}
+
+dict1["1"] => Return "one" value
+dict1["1"] = "new_one" => First index will update as new_one
+
+len(dict1) => Return length
+"two" in dict1 => Return true
+
+dict1.keys() => Return all keys
+dict1.values() => Return all values
+dict1.items() => Return key_value pairs ie tuples
+
+
